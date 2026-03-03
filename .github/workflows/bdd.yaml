@@ -2,13 +2,13 @@ name: BDD tests
 
 on:
   push:
-    branches: ["main", "master"]
+    # branches: ["main", "master"]
   pull_request:
 
 jobs:
   bdd:
     name: BDD tests
-    uses: RedHatInsights/processing-tools/.github/workflows/bdd.yaml@master
+    uses: joselsegura/processing-tools/.github/workflows/bdd.yaml@bdd-notification-service
     with:
       service: exporter
       use_postgres: true
